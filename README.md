@@ -143,10 +143,10 @@ Response: {</br>
 > No array acima, há inditificação de DUAS ENTRADAS no estacionamento pela placa YUR-1996. Cada "objeto" dentro deste array, é uma entrada do veículo.
 > A ordem cronológica é do mais antigo para o mais atual.
 >
-> > time: informação do tempo que o veículo passou estacionado. A informação aparecerá entre aspas e conterá datações em inglês(days=dias; hours=horas; minutes=minutos;seconds=segundos.).
-> > paid: informação a respeito do pagamento. Se false, pagamento não confirmado. Se true, pagamento confirmado.
-> > left: informação sobre a ausência do veículo. Se o veículo tiver saido constará o valor true, se ainda estiver dentro do estacionamento, constará o valor false.
-> > plate: placa do carro, entre aspas.
+> > time: informação do tempo que o veículo passou estacionado. A informação aparecerá entre aspas e conterá datações em inglês(days=dias; hours=horas; minutes=minutos;seconds=segundos.).<br/>
+> > paid: informação a respeito do pagamento. Se false, pagamento não confirmado. Se true, pagamento confirmado.<br/>
+> > left: informação sobre a ausência do veículo. Se o veículo tiver saido constará o valor true, se ainda estiver dentro do estacionamento, constará o valor false.<br/>
+> > plate: placa do carro, entre aspas.<br/>
 > > reservation: código de controle de cada entrada no estacionamento. Ao entrar no estacionamento é gerado este código e armazenado no servidor.
 </br></br></br>
 
