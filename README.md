@@ -168,7 +168,7 @@ Response: {</br>
 <tr>
     <td>axios:</td>
     <td>^0.26.1</td>
-    <td>Necessário para rodar o projeto.</td>
+    <td>Necessário para rodar o projeto</td>
 </tr>
 <tr>
     <td>gh-pages</td>
@@ -189,7 +189,7 @@ Response: {</br>
 </tr><tr>
     <td>web-vitals</td>
     <td>^2.1.4</td>
-    <td>Necessário para rodar o projeto.</td>
+    <td>Necessário para rodar o projeto</td>
 </tr>
 
 </table>
@@ -290,7 +290,7 @@ Em decorrência de conhecimentos previos de NodeJs, o consumo de API não foi um
 A título de exemplo: 'Error 400 - Bad Request'e 'Error 422 - Unprocessable Entity'. Felizmente depois de muita pesquisa, decidiu-se usar uma ferramenta cliente de API REST chamada Insomnia, com base nos dados retornados por ela, fora possivel assimilar os padrões de resposta da API. Ao todo, foram quatro dias de longo estudo/pesquisas/aplicação/observação.
 </br></br>
 
-## 💻 Desenvolvedor:🪑
+## 💻 Desenvolvedor🪑:
 
 O criador e desenvolvedor deste projeto:
 
@@ -312,5 +312,5 @@ O criador e desenvolvedor deste projeto:
 
 **Desenvolvedor**: Foi um prazer poder participar deste desafio proposto pela Parafuzo. Posso afirmar que devido ao meu pouco conhecimento com a bilioteca React. Este acabou sendo um desafio muito maior do que o que estive habituado. Como perceptível a aplicação não fora finalizada. Espero que a documentação, possa de alguma forma ser proveitosa para outros desenvolvedores. Pretendo desenvolver o Parking-App até o limite de planejamento. E se possível desenvolvê-lo além disso.
 
-<strong> Atenciosamente,</strong>
+<strong> Atenciosamente,</strong><br/>
 <i>Yuri Mayk Medeiros</i>
