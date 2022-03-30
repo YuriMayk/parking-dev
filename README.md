@@ -40,7 +40,7 @@ Este projeto ainda está em fase de desenvolvimento. Abaixo estão as tarefas ex
 - [x] Armazenamento de estilos globais à parte;
 - [x] Estilos responsivos;
 - [x] Utilização de funções assíncronas para realizar requisições à API;
-- [x] Requisição HTTP, utilizando Method POST para enviar: {Veículo estacionado/Pagamento realizado/Saída Liberada}
+- [x] Requisição HTTP, utilizando Method POST para enviar: {Veículo estacionado/Pagamento realizado/Saída Liberada};
 - [ ] Requisição HTTP, utilizando Method GET, para obter histórico de veículos;
 - [x] Renderizadas as requisições HTTP;
 - [x] Retorno visual de erros;
@@ -51,7 +51,6 @@ Este projeto ainda está em fase de desenvolvimento. Abaixo estão as tarefas ex
 - [ ] Exibição de histórico de cada placa;
 - [x] Aprimorar responsividade;
 - [ ] Testes (jest);
-- [ ]
 - [x] Realização de Deploy;
 - [x] Dispor projeto online.
 
@@ -80,7 +79,7 @@ informação à ser enviada: {</br>
 }</br>
 </br>
 - Observação: A informação a ser enviada pelo Header, não é necessário se o usurário utilizar o cliente HTTP AXIOS.</br>
-- Observação?: A informação a ser enviada, precisa ir exatamente conforme o modelo. Qualquer desvio de caracter a API retornará um erro, possIvelmente BAD REQUEST 400. Por exemplo:</br>
+- Observação²: A informação a ser enviada, precisa ir exatamente conforme o modelo. Qualquer desvio de caracter a API retornará um erro, possIvelmente BAD REQUEST 400. Por exemplo:</br>
 <br/>
 <ul>
 <li>'plate' DEVERÁ está entre aspas.</li>
@@ -98,7 +97,7 @@ Endpoint: https://parking-lot-to-pfz.herokuapp.com/parking/aAa-4444/pay</br>
 Method:post</br>
 </br>
 Observação³: Esta rota é bastante simples, mas precisa ser configurada corretamente. Para isso é necessário que, seguindo o mesmo padrão da rota anterior, os caracteres da placa sejam colocados em UPPERCASE, e haja separação, por meio de hífen, entre os três primeiros digitos e os últimos. Nesta rota, a placa <strong>não deverá</strong> estar entre aspas. </br>
-Observação<sub>4</sup>: O valor utilizado como Endpoint deverá ser alterado. onde encontra-se 'aAa-4444' deverá encontrar-se os 8 caracteres da placa(incluindo o hífen).</br></br>
+Observação<sup>4</sup>: O valor utilizado como Endpoint deverá ser alterado. onde encontra-se 'aAa-4444' deverá encontrar-se os 8 caracteres da placa(incluindo o hífen).</br></br>
 
 ## Rota para liberar a saída do veículo
 </br>
