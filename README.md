@@ -78,6 +78,7 @@ informação à ser enviada: {</br>
 "plate":"XXX-9999"</br>
 }</br>
 </br>
+
 - Observação: A informação a ser enviada pelo Header, não é necessário se o usurário utilizar o cliente HTTP AXIOS.</br>
 - Observação²: A informação a ser enviada, precisa ir exatamente conforme o modelo. Qualquer desvio de caracter a API retornará um erro, possIvelmente BAD REQUEST 400. Por exemplo:</br>
 <br/>
@@ -92,6 +93,7 @@ informação à ser enviada: {</br>
 </br>
 
 ## Rota para confirmar pagamento pelo uso do estacionamento
+
 </br>
 Endpoint: https://parking-lot-to-pfz.herokuapp.com/parking/aAa-4444/pay</br>
 Method: POST</br>
@@ -100,6 +102,7 @@ Observação³: Esta rota é bastante simples, mas precisa ser configurada corre
 Observação<sup>4</sup>: O valor utilizado como Endpoint deverá ser alterado. onde encontra-se 'aAa-4444' deverá encontrar-se os 8 caracteres da placa(incluindo o hífen).</br></br>
 
 ## Rota para liberar a saída do veículo
+
 </br>
 
 Endpoint: https://parking-lot-to-pfz.herokuapp.com/parking/AaA-4444/out</br>
@@ -110,6 +113,7 @@ Observação<sub>6</sup>: O valor utilizado como Endpoint deverá ser alterado. 
 </br></br>
 
 ## Rota para acessar o histórico por placa
+
 </br>
 Endpoint: https://parking-lot-to-pfz.herokuapp.com/parking/AaA-4444</br>
 Method: GET</br>
@@ -138,22 +142,29 @@ Response: {</br>
 </br></br>
 
 ## Legenda referente ao JSON
+
 </br>
 
 > No array acima, há inditificação de DUAS ENTRADAS no estacionamento pela placa YUR-1996. Cada "objeto" dentro deste array, é uma entrada do veículo.
 > A ordem cronológica é do mais antigo para o mais atual.
 >
-> > time: informação do tempo que o veículo passou estacionado. A informação aparecerá entre aspas e conterá datações em inglês(days=dias; hours=horas; minutes=minutos;seconds=segundos.).<br/>
-> > paid: informação a respeito do pagamento. Se false, pagamento não confirmado. Se true, pagamento confirmado.<br/>
-> > left: informação sobre a ausência do veículo. Se o veículo tiver saido constará o valor true, se ainda estiver dentro do estacionamento, constará o valor false.<br/>
-> > plate: placa do carro, entre aspas.<br/>
+> > time: informação do tempo que o veículo passou estacionado. A informação aparecerá entre aspas e conterá datações em inglês(days=dias; hours=horas; minutes=minutos;seconds=segundos.).<br/><br/>
+> > paid: informação a respeito do pagamento. Se false, pagamento não confirmado. Se true, pagamento confirmado.<br/><br/>
+> > left: informação sobre a ausência do veículo. Se o veículo tiver saido constará o valor true, se ainda estiver dentro do estacionamento, constará o valor false.<br/><br/>
+> > plate: placa do carro, entre aspas.<br/><br/>
 > > reservation: código de controle de cada entrada no estacionamento. Ao entrar no estacionamento é gerado este código e armazenado no servidor.
-</br></br></br>
+> > </br></br></br>
 
 ### O que é necessário para rodar e/ou realizar deploy neste projeto?
+
 </br>
 <table>
 
+<tr>
+<th>Tecnologia</th>
+<th>Versão</th>
+<th>Uso</th>
+</tr>
 <tr>
     <td>axios:</td>
     <td>^0.26.1</td>
@@ -184,30 +195,34 @@ Response: {</br>
 </table>
 </br></br>
 
-> > > Ao lonar este repositório, é necessário instalar as dependências. Para isso é necessário reconstruir a pasta node-modules, utilizando npm install( ou yarn add).
-</br></br></br>
+> > > Ao clonar este repositório, é necessário instalar as dependências. Para isso é necessário reconstruir a pasta node-modules, utilizando npm install( ou yarn add).
+> > as versõe precedidas de '^' podem rodar com as versões superiores às listadas.
+> > </br></br></br>
 
 ### Quais scripts usar para rodar a aplicação pelo terminal?
+
 </br>
 
 Este projeto foi iniciado com create-react-app(segue código abaixo).
 
 > <<<<<<< $ npx create-react-app parking >>>>>>>
-</br>
-Observação: O npx é um executor de pacotes NPM, ou seja, para usar o npx é necessário que ele esteja instalado no dispositivo. Para isso, basta usar o comando npm (abaixo):
+> </br>
+> Observação: O npx é um executor de pacotes NPM, ou seja, para usar o npx é necessário que ele esteja instalado no dispositivo. Para isso, basta usar o comando npm (abaixo):
 
 > <<<<<<< npm install -g npx >>>>>>>
-</br>
+> </br>
 
 Para mais informações sobre o create react app acesse o link a seguir: [Create React App](https://github.com/facebook/create-react-app).
 </br></br></br>
 
 ## Iniciando o projeto
+
 </br>
 Segue abaixo os scripts utilizados nesse projeto:
 </br></br>
 
 ### `npm start`
+
 </br>
 
 (alternativa yarn: `yarn start`)
@@ -222,6 +237,7 @@ A página irá recarregar, ou renderizar, quando mudanças forem salvas nos arqu
 </br>
 
 ### `npm test`
+
 </br>
 
 (alternativa yarn: `yarn test`)
@@ -231,6 +247,7 @@ Executa o observador de teste em um modo interativo. Por padrão, executa testes
 </br></br>
 
 ### `npm run build`
+
 </br>
 </br>
 
@@ -245,6 +262,7 @@ Para mais informações sobre deploy, acesse o link a seguir: [deployment](https
 </br></br>
 
 ### `npm run eject`
+
 </br>
 
 **OBSERVAÇÃO: Este é um comando sem volta. Uma vez tendo executado-o não há possibilidades de retorno.**
@@ -255,6 +273,7 @@ Ele não destruirá as configurações. Mas copiará para o projeto. E para real
 </br></br>
 
 ## Dificuldades
+
 </br></br>
 
 Este projeto iniciou-se no dia 23 de março de 2022.</br>
@@ -268,10 +287,11 @@ Em relação à primeira, durante todo o projeto, houve dificuldades em referên
 
 Referente à segunda grande dificuldade:</br>
 Em decorrência de conhecimentos previos de NodeJs, o consumo de API não foi uma dificuldade maior. Houve dificuldade em assimilar as informações em formato curl, recebidas. Ao tentar utilizar o cliente HTTP AXIOS, o único método conhecido pelo desenvolvedor, houve desencontro de informações, tanto pela requisição à API, quanto na recepção de resposta provinda pela mesma. Por não estar familiarizado com a sintaxe JSON, parâmetros foram enviados com sintaxe não adequada, gerando assim um grande contratempo e investimento em pesquisas sobre o formato do comando curl, sobre clientes HTTP, sobre o uso do fetch no React, e sobre erros HTTP que eram retornados pela API. <br/>
-A título de exemplo: 'Error 400 - Bad Request'e 'Error 422 - Unprocessable Entity'. Felizmente depois de muita pesquisa, decidiu-se usar uma ferramenta cliente de API REST chamada Insomnia, com base nos dados retornados por ela, fora possivel assimilar os padrões de resposta da API. Ao todo, foram quatro dias de longo estudo/pesquisas/aplicação/observação. 
+A título de exemplo: 'Error 400 - Bad Request'e 'Error 422 - Unprocessable Entity'. Felizmente depois de muita pesquisa, decidiu-se usar uma ferramenta cliente de API REST chamada Insomnia, com base nos dados retornados por ela, fora possivel assimilar os padrões de resposta da API. Ao todo, foram quatro dias de longo estudo/pesquisas/aplicação/observação.
 </br></br>
 
 ## 💻 Desenvolvedor:🪑
+
 O criador e desenvolvedor deste projeto:
 
 <table>
@@ -287,7 +307,6 @@ O criador e desenvolvedor deste projeto:
 </table>
 
 [⬆ Voltar ao topo](#nome-do-projeto)<br>
-
 
 ### Palavras finais
 
