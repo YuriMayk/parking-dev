@@ -114,8 +114,8 @@ Observação<sub>6</sup>: O valor utilizado como Endpoint deverá ser alterado. 
 Endpoint: https://parking-lot-to-pfz.herokuapp.com/parking/AaA-4444</br>
 Method: GET</br>
 </br>
-Observação<sub>7</sup>: O valor utilizado como Endpoint deverá ser alterado. onde encontra-se 'AaA-4444' deverá encontrar-se os 8 caracteres da placa(incluindo o hífen).</br>
-Observação<sub>8</sup>: A configuração desta rota, não difere em sua requisição. No entanto, Ela será dotada de uma resposta em formato JSON, conforme demonstrado abaixo:</br>
+Observação<sup>7</sup>: O valor utilizado como Endpoint deverá ser alterado. onde encontra-se 'AaA-4444' deverá encontrar-se os 8 caracteres da placa(incluindo o hífen).</br>
+Observação<sup>8</sup>: A configuração desta rota, não difere em sua requisição. No entanto, Ela será dotada de uma resposta em formato JSON, conforme demonstrado abaixo:</br>
 </br>
 Response: {</br>
 [</br>
