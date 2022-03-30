@@ -23,7 +23,7 @@ Se já saiu do estacionamento.
 
 > Interface do Parking-App funcionando em um dispositivo móvel.
 
-### Click at link below to see it working! / Clique no link abaixo para vê-lo funcionando!
+### Clique no link abaixo para vê-lo funcionando!
 
 <a href="https://yurimayk.github.io/parking/">Clique aqui!</a>
 
