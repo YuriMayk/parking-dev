@@ -70,7 +70,7 @@ Este projeto ainda está em fase de desenvolvimento. Abaixo estão as tarefas ex
 </br>
 
 Endpoint: https://parking-lot-to-pfz.herokuapp.com/parking</br>
-Method:post</br>
+Method: POST</br>
 Informação enviada no Headers:{</br>
 Content-type: Application/json</br>
 }</br>
@@ -94,7 +94,7 @@ informação à ser enviada: {</br>
 ## Rota para confirmar pagamento pelo uso do estacionamento
 </br>
 Endpoint: https://parking-lot-to-pfz.herokuapp.com/parking/aAa-4444/pay</br>
-Method:post</br>
+Method: POST</br>
 </br>
 Observação³: Esta rota é bastante simples, mas precisa ser configurada corretamente. Para isso é necessário que, seguindo o mesmo padrão da rota anterior, os caracteres da placa sejam colocados em UPPERCASE, e haja separação, por meio de hífen, entre os três primeiros digitos e os últimos. Nesta rota, a placa <strong>não deverá</strong> estar entre aspas. </br>
 Observação<sup>4</sup>: O valor utilizado como Endpoint deverá ser alterado. onde encontra-se 'aAa-4444' deverá encontrar-se os 8 caracteres da placa(incluindo o hífen).</br></br>
@@ -103,16 +103,16 @@ Observação<sup>4</sup>: O valor utilizado como Endpoint deverá ser alterado. 
 </br>
 
 Endpoint: https://parking-lot-to-pfz.herokuapp.com/parking/AaA-4444/out</br>
-Method:post</br>
+Method: POST</br>
 </br>
-Observação<sub>5</sup>: Assim como a rota responsável pelo pagamento, esta rota é bastante simples, mas também requer a mesma atenção ao configurar requisição para API. É necessário que, seguindo o mesmo padrão da rota anterior, os caracteres da placa sejam colocados em UPPERCASE, e haja separação, por meio de hífen, entre os três primeiros digitos e os últimos. A placa <strong>não deverá</strong> estar entre aspas.</br>
+Observação<sup>5</sup>: Assim como a rota responsável pelo pagamento, esta rota é bastante simples, mas também requer a mesma atenção ao configurar requisição para API. É necessário que, seguindo o mesmo padrão da rota anterior, os caracteres da placa sejam colocados em UPPERCASE, e haja separação, por meio de hífen, entre os três primeiros digitos e os últimos. A placa <strong>não deverá</strong> estar entre aspas.</br>
 Observação<sub>6</sup>: O valor utilizado como Endpoint deverá ser alterado. onde encontra-se 'AaA-4444' deverá encontrar-se os 8 caracteres da placa(incluindo o hífen).</br>
 </br></br>
 
 ## Rota para acessar o histórico por placa
 </br>
 Endpoint: https://parking-lot-to-pfz.herokuapp.com/parking/AaA-4444</br>
-Method:get</br>
+Method: GET</br>
 </br>
 Observação<sub>7</sup>: O valor utilizado como Endpoint deverá ser alterado. onde encontra-se 'AaA-4444' deverá encontrar-se os 8 caracteres da placa(incluindo o hífen).</br>
 Observação<sub>8</sup>: A configuração desta rota, não difere em sua requisição. No entanto, Ela será dotada de uma resposta em formato JSON, conforme demonstrado abaixo:</br>
