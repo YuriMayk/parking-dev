@@ -11,7 +11,7 @@ Se o mesmo se encontra no estacionamento;
 <br/>
 Se já efetuou pagamento;
 <br/>
-Se já saiu do estacionamento;
+Se já saiu do estacionamento.
 <br/>
 <br/>
 
